@@ -28,14 +28,16 @@
     padding: 8px 12px;
     border: solid 1px var(--color-fonce);
     transition: all .3s;
+    font-family: 'Lato_bold';
 }
 #top li a:hover{
     transition: all .3s;
     border: solid 1px #fff;
 }
 #top li:last-child a{
-    color: var(---bleu-clair);
+    color: var(--bleu-clair);
 }
 #top li:last-child a:hover{
-    color: var(---bleu-fonce);
+    color: var(--bleu-fonce);
+    border: solid 1px var(--bleu-fonce);
 }
