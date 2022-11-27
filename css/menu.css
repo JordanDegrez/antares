@@ -7,10 +7,13 @@
 .menu_top{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+.logo a{display: block;}
+.logo{height: fit-content;}
 .logo img{
-    min-width: 150px;
-}
+    width: 250px;
+    min-width: 150px;}
 #top nav ul{
     display: flex;
 }
@@ -29,4 +32,10 @@
 #top li a:hover{
     transition: all .3s;
     border: solid 1px #fff;
+}
+#top li:last-child a{
+    color: var(---bleu-clair);
+}
+#top li:last-child a:hover{
+    color: var(---bleu-fonce);
 }
