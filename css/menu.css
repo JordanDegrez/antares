@@ -41,3 +41,28 @@
     color: var(--bleu-fonce);
     border: solid 1px var(--bleu-fonce);
 }
+.bandeau_accueil{
+    position: relative;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.img_accueil{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.txt_accueil{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 40%;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.5); 
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.5);
+}
