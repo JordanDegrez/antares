@@ -68,33 +68,39 @@ body{
     margin: 0;
     font-size: 1.5rem;
 }
-.card_player:hover .info_player{
-    box-shadow: none;
+.card_player:hover .info_player{box-shadow: none;}
+.card_player:hover .stats_bar_kd span,
+.card_player:hover .stats_bar_hs span,
+.card_player:hover .stats_bar_win span,
+.card_player:hover .role,
+.card_player:hover .stats_value{
+    background: var(--bleu-fonce);
+    transition: all .3s;
 }
-.stats{
-    width: 100%;
-}
+.stats{width: 100%;}
 .stats_bar_kd, .stats_bar_hs, .stats_bar_win,.stats_bar_dmg{
     width: 100%;
     height: 10px;
     background: var(--gris-clair);
     border: solid 1px var(--gris-fonce);
 }
-.stats_bar_kd span, .stats_bar_hs span, .stats_bar_win span,.stats_bar_dmg span{
+.stats_bar_kd span, .stats_bar_hs span, .stats_bar_win span{
     width: 62%;
     height: 10px;
+    transition: all .3s;
     background: var(--bleu-clair);
     display: block;
     position: relative;
     border-radius: 0 1px 1px 0;
 }
-.stats_bar_hs span{width: 26%;}
-.stats_bar_win span{width: 80%;}
-.stats_bar_dmg span{width: 50%;}
+.stats_bar_hs span{width: 48%;}
+.stats_bar_win span{width: 84%;}
 .name_stats{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 10px 0;
+    transition: all .3s;
 }
 .name_stats > *{
     margin: 0;
@@ -121,4 +127,5 @@ body{
     padding: 3px 10px;
     background: var(--bleu-clair);
     width: fit-content;
+    transition: all .3s;
 }
