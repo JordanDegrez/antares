@@ -113,3 +113,37 @@ body{
     background: var(--bleu-clair);
     width: fit-content;
 }
+
+
+
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.m-backtotop {
+    transition: (all 0.3s ease-in-out);
+    position: fixed;
+    bottom: -50px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #222;
+    border-radius: 25px;
+    text-align: center;
+    border: 2px solid rgb(66, 12, 12);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    overflow: hidden;
+	color:violet;
+    z-index: 999;
+
+}
+.btt_text{
+    font-size: 3rem;
+}
+.active {
+      bottom: 15px;
+      opacity: 1;
+}

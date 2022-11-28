@@ -15,3 +15,20 @@ $(window).scroll(function () {
         $("#backtotop").removeClass("show");
     }
 });
+
+
+var toggleHeight = $(window).outerHeight() * 2;
+
+$(window).scroll(function() {
+	if ($(window).scrollTop() > toggleHeight) {
+		$(".m-backtotop").addClass("active");		
+	} else {	
+		$(".m-backtotop").removeClass("active");
+	}
+});
+
+
+$(".m-backtotop").click(function() {
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+	return false;
+});
