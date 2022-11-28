@@ -27,6 +27,7 @@ body{
     width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     grid-gap: 15px;
+    margin: 30px auto;
 }
 .card_player{
     position: relative;
@@ -48,7 +49,10 @@ body{
     left: 0;
     height: 350px;
 }
-.img_player img{max-height: 100%;}
+.img_player img{
+    margin-left: 10px;
+    min-height: 300px;
+    max-height: 100%;}
 .info_player{
     z-index: 9;
     width: calc(100% - 210px);
@@ -61,6 +65,8 @@ body{
 }
 .info_player h2{
     font-family: 'Lato_black';
+    margin: 0;
+    font-size: 1.5rem;
 }
 .card_player:hover .info_player{
     box-shadow: none;
@@ -88,4 +94,13 @@ body{
 }
 .stats_label{
     font-family: 'Lato_bold';
+}
+.role{
+    font-family: 'Lato_bold';
+    color: #fff;
+    margin: 5px 0;
+    line-height: 1.2;
+    padding: 3px 10px;
+    background: var(--bleu-clair);
+    width: fit-content;
 }
