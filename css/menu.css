@@ -25,7 +25,7 @@
     text-transform: uppercase;
     display: block;
     padding: 8px 12px;
-    border: solid 1px var(--color-fonce);
+    border: solid 1px transparent;
     transition: all .3s;
     font-family: 'Lato_bold';
 }

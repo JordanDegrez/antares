@@ -20,3 +20,30 @@ body{
     margin: 0 auto;
 }
 
+/*card player*/
+#team{
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-gap: 15px;
+}
+.card_player{
+    position: relative;
+    background: violet;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+}
+.img_player{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 300px;
+    background: blue;
+}
+.img_player img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
