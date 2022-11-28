@@ -3,6 +3,7 @@
     position: relative;
     padding: 10px 20px;
 }
+.scrollmenu_actif{position: fixed;}
 .menu_top{
     display: flex;
     justify-content: space-between;
