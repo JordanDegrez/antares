@@ -74,33 +74,42 @@ body{
 .stats{
     width: 100%;
 }
-.stats_bar_aim{
+.stats_bar_kd, .stats_bar_hs, .stats_bar_win,.stats_bar_dmg{
     width: 100%;
     height: 10px;
     background: var(--gris-clair);
     border: solid 1px var(--gris-fonce);
 }
-.stats_bar_aim span{
-    width: 42%;
+.stats_bar_kd span, .stats_bar_hs span, .stats_bar_win span,.stats_bar_dmg span{
+    width: 62%;
     height: 10px;
     background: var(--bleu-clair);
     display: block;
     position: relative;
     border-radius: 0 1px 1px 0;
 }
+.stats_bar_hs span{width: 26%;}
+.stats_bar_win span{width: 80%;}
+.stats_bar_dmg span{width: 50%;}
 .name_stats{
     display: flex;
     justify-content: space-between;
+    margin: 10px 0;
+}
+.name_stats > *{
+    margin: 0;
+    padding: 0;
 }
 .stats_label{
     font-family: 'Lato_bold';
+    font-size: 14px;
 }
 .stats_value{
     background: var(--bleu-clair);
     padding: 5px;
     font-size: 12px;
     color: #fff;
-    font-family: 'Lato_light';
+    font-family: 'Lato_regular';
     border-radius: 5px;
 }
 .role{
@@ -112,38 +121,4 @@ body{
     padding: 3px 10px;
     background: var(--bleu-clair);
     width: fit-content;
-}
-
-
-
-@keyframes AnimationName { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
-.m-backtotop {
-    transition: (all 0.3s ease-in-out);
-    position: fixed;
-    bottom: -50px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: #222;
-    border-radius: 25px;
-    text-align: center;
-    border: 2px solid rgb(66, 12, 12);
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-    opacity: 1;
-    overflow: hidden;
-	color:violet;
-    z-index: 999;
-
-}
-.btt_text{
-    font-size: 3rem;
-}
-.active {
-      bottom: 15px;
-      opacity: 1;
 }
