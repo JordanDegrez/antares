@@ -88,17 +88,26 @@ body{
     position: relative;
     border-radius: 0 1px 1px 0;
 }
-.names_stats{
+.name_stats{
     display: flex;
     justify-content: space-between;
 }
 .stats_label{
     font-family: 'Lato_bold';
 }
+.stats_value{
+    background: var(--bleu-clair);
+    padding: 5px;
+    font-size: 12px;
+    color: #fff;
+    font-family: 'Lato_light';
+    border-radius: 5px;
+}
 .role{
     font-family: 'Lato_bold';
     color: #fff;
     margin: 5px 0;
+    font-size: 12px;
     line-height: 1.2;
     padding: 3px 10px;
     background: var(--bleu-clair);
