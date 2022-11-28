@@ -11,6 +11,7 @@
 }
 .logo a{display: block;}
 .logo{
+    font-size: inherit;
     background: none;
     box-shadow: none;
     height: fit-content;

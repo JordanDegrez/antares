@@ -26,3 +26,10 @@
     font-weight: 900;
     src: url('../elements/fonts/lato-v23-latin-900.woff') format('woff');
   }
+    /* fa-solid-900 */
+    @font-face {
+      font-family: 'fa_solid';
+      font-style: normal;
+      font-weight: 900;
+      src: url('../elements/fonts/fa-solid-900.woff') format('woff');
+    }

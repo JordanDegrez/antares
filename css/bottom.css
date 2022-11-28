@@ -1,0 +1,37 @@
+footer{
+    background: var(--color-fonce);
+    padding: 20px 0;
+}
+footer nav ul{display: flex;}
+footer li{list-style: none;}
+footer li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 8px 12px;
+    border: solid 1px transparent;
+    transition: all .3s;
+    font-family: 'Lato_bold';
+}
+footer li a:hover{
+    transition: all .3s;
+    border: solid 1px #fff;
+}
+footer li:last-child a{color: var(--bleu-clair);}
+footer li:last-child a:hover{
+    color: var(--bleu-fonce);
+    border: solid 1px var(--bleu-fonce);
+}
+.reseaux a{
+    border: solid 1px #fff;
+    display: block;
+    width: 30px;
+}
+footer svg{
+    fill:#fff;
+    max-width: 30px;
+}
+footer svg:hover{
+    fill: var(--bleu-clair);
+}
